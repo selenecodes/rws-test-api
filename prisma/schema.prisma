@@ -1,0 +1,28 @@
+datasource db {
+  provider = "postgresql" 
+  url      = env("DATABASE_URL") 
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Soort {
+  Adres
+  Postbus
+  AdresMetPostbus
+}
+
+model Zipcode {
+  id                          Int       @id @default(autoincrement())
+  postcode                    Int
+  netnummer                   String
+  latitude                    Float
+  longitude                   Float
+  woonplaats                  String
+  soort                       String
+  provincie                   String
+  alternatieve_schrijfwijzen  String?
+  gemeente                    String?
+  createdAt                   DateTime  @default(now())
+}
