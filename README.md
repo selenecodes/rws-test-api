@@ -1,24 +1,35 @@
-## DB
+# Tooling used:
+- Typescript
+- Postgres
+- Apollo GraphQL server
+- Prisma Database Schemas
+- Nexus Type generator
 
-We added `sqlite` as db provider in `schema.prisma` you can change it to your custom db provider
+# Installation
+## Development
+```bash
+# Start the postgres server
+docker-compose -d postgres
 
-after an update your `schema.prisma` run
-
-```shell
-yarn db-dev
+# Saves the schema to the database
+npm run db:dev
+# Generate Nexus and GraphQL types
+npm run generate
+# Run the development server
+npm run dev 
 ```
 
-this commands will save your schema into db
-
-now run
-
-```shell
-yarn generate
-yarn dev
+### Seeding the database
+```bash
+npm run db:seed
 ```
 
-- build prisma client
-- build crud system
-- start dev server
+## Production
+```bash
+# Create the docker image
+docker build . -t "rws"
+# Star the API and postgres services
+docker-compose up -d
 
-`Good work`
+# Open your browser on http://localhost:80
+```
