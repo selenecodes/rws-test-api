@@ -7,12 +7,6 @@ generator client {
   provider = "prisma-client-js"
 }
 
-enum Soort {
-  Adres
-  Postbus
-  AdresMetPostbus
-}
-
 model Zipcode {
   id                          Int       @id @default(autoincrement())
   postcode                    Int
