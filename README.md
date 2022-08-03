@@ -37,3 +37,4 @@ Open the [Apollo GraphQL explorer](http://localhost:80) in your browser to explo
 
 ---
 # Usage
+The notebooks in the `./examples` directory show how to ingest the 4pp dataset and also show exmaples of how one can query the API's data. For more information, see the [examples](./examples).
