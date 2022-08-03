@@ -14,11 +14,7 @@
     "generate": "pal g && npm -s run generate:prisma && npm -s run generate:nexus",
     "generate:prisma": "prisma generate",
     "generate:nexus": "ts-node --transpile-only src/nexusSchema",
-    "db:dev": "prisma migrate dev",
-    "db:seed": "prisma migrate reset -f"
-  },
-  "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "db:dev": "prisma migrate dev"
   },
   "dependencies": {
     "@paljs/nexus": "4.1.0",

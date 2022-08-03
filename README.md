@@ -19,11 +19,6 @@ npm run generate
 npm run dev 
 ```
 
-### Seeding the database
-```bash
-npm run db:seed
-```
-
 ## Production
 ```bash
 # Create the docker image
