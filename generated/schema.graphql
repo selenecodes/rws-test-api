@@ -126,6 +126,7 @@ input IntWithAggregatesFilter {
 scalar Json
 
 type Mutation {
+  createManyZipcode(data: [ZipcodeCreateInput!]): BatchPayload!
   createOneZipcode(data: ZipcodeCreateInput!): Zipcode!
   deleteManyZipcode(where: ZipcodeWhereInput): BatchPayload!
   deleteOneZipcode(where: ZipcodeWhereUniqueInput!): Zipcode

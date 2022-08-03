@@ -679,6 +679,7 @@ export interface NexusGenFieldTypes {
     count: number; // Int!
   }
   Mutation: { // field return type
+    createManyZipcode: NexusGenRootTypes['BatchPayload']; // BatchPayload!
     createOneZipcode: NexusGenRootTypes['Zipcode']; // Zipcode!
     deleteManyZipcode: NexusGenRootTypes['BatchPayload']; // BatchPayload!
     deleteOneZipcode: NexusGenRootTypes['Zipcode'] | null; // Zipcode
@@ -772,6 +773,7 @@ export interface NexusGenFieldTypeNames {
     count: 'Int'
   }
   Mutation: { // field return type name
+    createManyZipcode: 'BatchPayload'
     createOneZipcode: 'Zipcode'
     deleteManyZipcode: 'BatchPayload'
     deleteOneZipcode: 'Zipcode'
@@ -855,6 +857,9 @@ export interface NexusGenFieldTypeNames {
 
 export interface NexusGenArgTypes {
   Mutation: {
+    createManyZipcode: { // args
+      data?: NexusGenInputs['ZipcodeCreateInput'][] | null; // [ZipcodeCreateInput!]
+    }
     createOneZipcode: { // args
       data: NexusGenInputs['ZipcodeCreateInput']; // ZipcodeCreateInput!
     }
