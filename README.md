@@ -33,3 +33,7 @@ docker-compose up -d
 
 # Open your browser on http://localhost:80
 ```
+Open the [Apollo GraphQL explorer](http://localhost:80) in your browser to explore the data.
+
+---
+# Usage

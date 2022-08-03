@@ -1,10 +1,11 @@
 {
-  "name": "test",
+  "name": "rws-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "author": "Selene Blok",
+  "description": "Rijkswaterstaat API",
   "license": "MIT",
   "private": true,
-  "description": "Rijkswaterstaat API",
+  "main": "index.js",
   "scripts": {
     "start": "node dist/server",
     "clean": "rimraf dist",
@@ -41,7 +42,5 @@
     "singleQuote": true,
     "semi": false,
     "trailingComma": "all"
-  },
-  "repository": "",
-  "author": "Selene Blok"
+  }
 }
